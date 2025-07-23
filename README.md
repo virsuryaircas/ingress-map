@@ -62,7 +62,7 @@ ingress-map-service    ClusterIP   10.43.121.201   <none>        80/TCP         
 # Visit the Web UI
 http://machineip:30050
 ```
-
+> Default username:passowrd is `admin:admin123` You can change it with the secret.yaml
 
 ### 📸 Screenshots
 
