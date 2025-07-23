@@ -1,0 +1,40 @@
+---
+# ServiceAccount for the ingress-map application
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ingress-map-sa
+  namespace: ingress-map
+  labels:
+    app: ingress-map
+---
+# ClusterRole defining the permissions for the ingress-map application
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ingress-map-reader
+  labels:
+    app: ingress-map
+rules:
+- apiGroups: [""]
+  resources: ["services"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: ["networking.k8s.io"]
+  resources: ["ingresses"]
+  verbs: ["get", "list", "watch"]
+---
+# ClusterRoleBinding to bind the ServiceAccount to the ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: ingress-map-binding
+  labels:
+    app: ingress-map
+subjects:
+- kind: ServiceAccount
+  name: ingress-map-sa
+  namespace: ingress-map
+roleRef:
+  kind: ClusterRole
+  name: ingress-map-reader
+  apiGroup: rbac.authorization.k8s.io
