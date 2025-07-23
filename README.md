@@ -1,6 +1,12 @@
-# 🗺️ Ingress Map to get location of all Hosts & Services
+<p align="center">
+  <img src="https://github.com/virsuryaircas/ingress-map/blob/main/imap-github-cover.svg?raw=true"
+       alt="Ingress Map GitHub Cover"
+       style="width: 500px; height: auto;" />
+</p>
 
-> Dashboard built to list and visualize all the Ingress objects and Service entries from your Kubernetes cluster in one place. It simplifies the process of checking routing rules, host mappings, service targets, and access URLs without digging through YAML or CLI outputs.
+# 🗺️ Map to get location of all Hosts & Services
+
+> An utility tool with dashboard built to visualize all the Ingress objects and Service entries from your k8s cluster in one place. It simplifies the process of checking routing path, host mappings, service targets, and access URLs without digging through YAML or CLI outputs.
 
 ## 🚀 Use Cases
 
