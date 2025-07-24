@@ -41,7 +41,7 @@
 # Clone the repository
 git clone https://github.com/virsuryaircas/ingress-map.git
 
-# To integrate Slack
+# Navigate to the directory
 cd ingress-map
 
 # Apply the all manifests
