@@ -4,7 +4,7 @@
        style="width: 500px; height: auto;" />
 </p>
 
-# 🗺️ Map to get location of all Hosts & Services
+# 🗺️ To get location of all Hosts & Services
 
 > An utility tool with dashboard built to visualize all the Ingress objects and Service entries from your k8s cluster in one place. It simplifies the process of checking routing path, host mappings, service targets, and access URLs without digging through YAML or CLI outputs.
 
