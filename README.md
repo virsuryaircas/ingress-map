@@ -48,7 +48,7 @@ cd ingress-map
 kubectl apply -k .
 
 # Verify the pod is in running state
-kubectl get po -n podpulse
+kubectl get po -n ingress-map
 
 # Get your machine IP and copy it
 hostname -I
